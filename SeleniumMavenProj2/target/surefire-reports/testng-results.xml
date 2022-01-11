@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-11T15:38:51 IST" name="Suite" finished-at="2022-01-11T15:39:05 IST" duration-ms="13603">
+    <groups>
+    </groups>
+    <test started-at="2022-01-11T15:38:51 IST" name="Test" finished-at="2022-01-11T15:39:05 IST" duration-ms="13603">
+      <class name="mavenFirst.VerifyGoogleTest">
+        <test-method is-config="true" signature="setbrowser()[pri:0, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:38:51 IST" name="setbrowser" finished-at="2022-01-11T15:38:58 IST" duration-ms="7208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setbrowser -->
+        <test-method signature="checkTitle()[pri:0, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:38:58 IST" name="checkTitle" finished-at="2022-01-11T15:38:58 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:38:58 IST" name="closeWindow" finished-at="2022-01-11T15:38:59 IST" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="setbrowser()[pri:0, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:38:59 IST" name="setbrowser" finished-at="2022-01-11T15:39:03 IST" duration-ms="4375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setbrowser -->
+        <test-method signature="checklogo()[pri:1, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:39:03 IST" name="checklogo" finished-at="2022-01-11T15:39:04 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checklogo -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:mavenFirst.VerifyGoogleTest@5b94b04d]" started-at="2022-01-11T15:39:04 IST" name="closeWindow" finished-at="2022-01-11T15:39:05 IST" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- mavenFirst.VerifyGoogleTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
