@@ -9,6 +9,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class VerifyGoogleTest {
+	public static void main(String args[]) {
+	}
+
 	WebDriver driver;
 
 	@BeforeMethod
