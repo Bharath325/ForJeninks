@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 public class VerifyGoogleTest {
 	public static void main(String args[]) {
+
 	}
 
 	WebDriver driver;
@@ -17,7 +18,7 @@ public class VerifyGoogleTest {
 	@BeforeMethod
 	public void setbrowser() {
 
-		System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win32\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\testingSoftware\\edgedriver_win32\\msedgedriver.exe");
 		driver = new EdgeDriver();
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
