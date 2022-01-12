@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 12 17:48:04 IST 2022</td>
+<td>Started on:</td><td>Wed Jan 12 18:00:53 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4103 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8954 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,12 +77,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.setbrowser()'><b>setbrowser</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -95,16 +95,16 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1992550266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1992550266'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -117,7 +117,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,7 +160,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
-<td>4</td>
+<td>8</td>
 <td>mavenFirst.VerifyGoogleTest@7ee8290b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -173,17 +173,17 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.closeWindow()'><b>closeWindow</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td></td>
-<td>-1641989888</td>
+<td>-1641990662</td>
 <td>mavenFirst.VerifyGoogleTest@7ee8290b</td></tr>
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.closeWindow()'><b>closeWindow</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td></td>
-<td>-1641989888</td>
+<td>-1641990662</td>
 <td>mavenFirst.VerifyGoogleTest@7ee8290b</td></tr>
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.setbrowser()'><b>setbrowser</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td></td>
-<td>-1641989888</td>
+<td>-1641990662</td>
 <td>mavenFirst.VerifyGoogleTest@7ee8290b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -196,12 +196,12 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.checklogo()'><b>checklogo</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -214,16 +214,16 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471004142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace471004142'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1702478809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702478809'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -236,7 +236,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -284,12 +284,12 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 <tr>
 <td title='mavenFirst.VerifyGoogleTest.checkTitle()'><b>checkTitle</b><br>Test class: mavenFirst.VerifyGoogleTest</td>
 <td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -302,16 +302,16 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225114731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1225114731'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1791589252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1791589252'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -324,7 +324,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

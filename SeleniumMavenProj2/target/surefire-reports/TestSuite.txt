@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 5.227 sec <<< FAILURE!
-setbrowser(mavenFirst.VerifyGoogleTest)  Time elapsed: 4.781 sec  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 15.291 sec <<< FAILURE!
+setbrowser(mavenFirst.VerifyGoogleTest)  Time elapsed: 14.865 sec  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn't exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'LAPTOP-I4NIJFCH', ip: '192.168.29.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -22,4 +22,4 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)

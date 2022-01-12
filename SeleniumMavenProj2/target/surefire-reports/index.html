@@ -136,12 +136,12 @@
                   </a> <!-- checkTitle -->
                   <span class="method-name">checkTitle</span>
                   <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -154,7 +154,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 40 stack frames
 </div> <!-- stack-trace -->
@@ -166,12 +166,12 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
                   </a> <!-- checklogo -->
                   <span class="method-name">checklogo</span>
                   <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
-  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (chrome not reachable)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;LAPTOP-I4NIJFCH&apos;, ip: &apos;192.168.29.75&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless], extensions: []}}}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [headless, --remote-debugging-port=9222], extensions: []}}}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
@@ -184,7 +184,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:46)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 40 stack frames
 </div> <!-- stack-trace -->
@@ -292,23 +292,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkTitle</span>
-                <span class="method-start">4025 ms</span>
+                <span class="method-start">8856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">4028 ms</span>
+                <span class="method-start">8858 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setbrowser</span>
-                <span class="method-start">4032 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checklogo</span>
-                <span class="method-start">4033 ms</span>
+                <span class="method-start">8866 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setbrowser</span>
+                <span class="method-start">8866 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">4034 ms</span>
+                <span class="method-start">8867 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
