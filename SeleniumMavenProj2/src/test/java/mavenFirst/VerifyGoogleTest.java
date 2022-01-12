@@ -43,7 +43,11 @@ public class VerifyGoogleTest {
 //		input = new FileInputStream("config.properties");
 //		prop.load(input);
 //		System.setProperty("webdriver.edge.driver", prop.getProperty("EDGE_HOME"));
-		System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win644\\msedgedriver.exe");
+		try {
+			System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win644\\msedgedriver.exe");
+		} catch (Exception e) {
+			System.out.println("Driver problem");
+		}
 		driver = new EdgeDriver();
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
