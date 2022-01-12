@@ -1,38 +1,34 @@
 package mavenFirst;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class VerifyGoogleTest {
-	public static void main(String args[]) {
-		Properties prop = new Properties();
-		InputStream input = null;
-
-		try {
-
-			input = new FileInputStream("config.properties");
-
-			// load a properties file
-			prop.load(input);
-
-			// get the property value and print it out
-			System.out.println(prop.getProperty("EDGE_HOME"));
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		} finally {
-			System.out.println("In finally");
-		}
-	}
+//	public static void main(String args[]) {
+//		Properties prop = new Properties();
+//		InputStream input = null;
+//
+//		try {
+//
+//			input = new FileInputStream("config.properties");
+//
+//			// load a properties file
+//			prop.load(input);
+//
+//			// get the property value and print it out
+//			System.out.println(prop.getProperty("EDGE_HOME"));
+//		} catch (IOException ex) {
+//			ex.printStackTrace();
+//		} finally {
+//			System.out.println("In finally");
+//		}
+//	}
 
 	WebDriver driver;
 
@@ -43,12 +39,11 @@ public class VerifyGoogleTest {
 //		input = new FileInputStream("config.properties");
 //		prop.load(input);
 //		System.setProperty("webdriver.edge.driver", prop.getProperty("EDGE_HOME"));
-		try {
-			System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win644\\msedgedriver.exe");
-		} catch (Exception e) {
-			System.out.println("Driver problem");
-		}
-		driver = new EdgeDriver();
+
+		System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win644\\msedgedriver.exe");
+		EdgeOptions op = new EdgeOptions();
+		op.addArguments("headless");
+		driver = new EdgeDriver(op);
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
 		System.out.println("Opening browser");
