@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 5.316 sec <<< FAILURE!
-setbrowser(mavenFirst.VerifyGoogleTest)  Time elapsed: 5.081 sec  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 10.7 sec <<< FAILURE!
+setbrowser(mavenFirst.VerifyGoogleTest)  Time elapsed: 10.251 sec  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: MSEdge failed to start: was killed.
   (unknown error: DevToolsActivePort file doesn't exist)
   (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
@@ -23,4 +23,4 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:41)
 	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:38)
-	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:21)
+	at mavenFirst.VerifyGoogleTest.setbrowser(VerifyGoogleTest.java:47)
