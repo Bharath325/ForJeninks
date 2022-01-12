@@ -43,6 +43,7 @@ public class VerifyGoogleTest {
 		System.setProperty("webdriver.edge.driver", "C:\\testingSoftware\\edgedriver_win644\\msedgedriver.exe");
 		EdgeOptions op = new EdgeOptions();
 		op.addArguments("headless");
+		op.addArguments("--remote-debugging-port=9222");
 		driver = new EdgeDriver(op);
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
