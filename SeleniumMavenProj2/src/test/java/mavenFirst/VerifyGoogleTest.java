@@ -59,7 +59,7 @@ public class VerifyGoogleTest {
 	@Test(priority = 1)
 	public void checklogo() {
 		System.out.println("checking logo");
-		Assert.assertTrue(driver.findElement(By.xpath("//img[@alt='Google']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"hplogo\"]")).isDisplayed());
 	}
 
 	@AfterMethod
